@@ -1,0 +1,58 @@
+---
+import "../styles/index.css"
+
+const name = "Brian Ramirez";
+const title = "Full Stack Developer";
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{name} Portfolio</title>
+	</head>
+	<body>
+		<!-- Navigation Sectiion -->
+		<nav>
+			<div class="container">
+				<div class="logo">BR</div>
+				<ul class="nav-links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Hero Section -->
+		<section class="hero" id="home">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-text fade-in">
+						<h1>Hi, I'm <span class="highlight">{name}</span></h1>
+						<p>{title} passionate about creating exceptional digital experiences with modern web technologies.</p>
+						<div class="cta-buttons">
+							<a href="#projects" class="btn-primary">View My Work</a>
+							<a href="#projects" class="btn-secondary">Let's Talk</a>
+						</div>
+					</div>
+					<div class="hero-visual fade-in stagger-2">
+						<div class="code-window">
+							<div class="code-content">
+								<div class="code-line"><span class="keyword">const</span> <span class="function">developer</span> =  &lbrace;</div>
+								<div class="code-line"> name: <span class="string">'Brian Ramirez'</span></div>
+								<div class="code-line"> skills: [<span class="string">'JavaScript'</span>, <span class="string">'HTML'</span>, <span class="string">'CSS'</span>]</div>
+								<div class="code-line"> passion: <span class="string">'Building amazing apps'</span></div>
+								<div class="code-line"> <span class="function">code</span>: () =&gt; <span class="string">'coffee + code = magic'</span></div>
+								<div class="code-line">&rbrace;;</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
